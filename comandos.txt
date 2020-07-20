@@ -1,0 +1,46 @@
+// criar arquivo .json para inserir as dependências
+npm init -y
+
+//Instalar a dependência e automaticamente colocar dentro do arquivo na parte de 'dependencies'
+npm i json-server
+
+//Chamar o json-server e colocou para ficar monitorando na porta 3001
+"start": "json-server --watch db.json --port 3001"
+
+//Iniciar a API
+npm start
+
+//No Postman o PATCH altera alguns atributos o PUT altera o objeto inteiro
+
+//Instalar o CLI (Command Line Interface), é uma dependência do NODE que cria uma comando 'ng' 
+npm i -g @angular/cli
+
+//Help Angular
+ng
+
+//Comando para criar um projeto Angular (--minimal para tirar alguns arquivos desnecessários como testes)
+ng new nomeDoProjeto 
+
+//No arquivo Angular.json alterar para false em 'inlineTemplate' e 'inlineStyle' para criar um arquivo separados HTML, CSS e JavaScript
+
+//Instalar o MaterialDesign
+ng add @angular/material
+
+//Criar um componente
+ng generate component components/template/header (ng g c)
+
+//Criar um Service
+ng g s services/*
+
+//Crirar uma diretiva
+ng g d directives/*
+
+transformarParaMaiusculo(['gato', 'cachorro', 'leão']);
+
+function transformarParaMaiusculo(palavras) {
+    var maiusculas = [];
+    for(let i = 0; i < palavras.length; i++) {
+        maiusculas.push(palavras[i].toUpperCase());
+    }
+    console.log(maiusculas)
+}
